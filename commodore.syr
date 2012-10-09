@@ -1,0 +1,736 @@
+Release 11.1 - xst L.33 (nt)
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 2.00 secs
+Total CPU time to Xst completion: 1.76 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 2.00 secs
+Total CPU time to Xst completion: 1.76 secs
+ 
+--> Reading design: commodore.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "commodore.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "commodore"
+Output Format                      : NGC
+Target Device                      : xc3s1200e-4-fg320
+
+---- Source Options
+Top Module Name                    : commodore
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Library Search Order               : commodore.lso
+Keep Hierarchy                     : NO
+Netlist Hierarchy                  : as_optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Documents and Settings/EE314project/ACDdriver.vhd" in Library work.
+Entity <adc> compiled.
+Entity <adc> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Documents and Settings/EE314project/DACdriver.vhd" in Library work.
+Entity <dacdriver> compiled.
+Entity <dacdriver> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Documents and Settings/EE314project/ddsdriver.vhd" in Library work.
+Entity <ddsdriver> compiled.
+Entity <ddsdriver> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Documents and Settings/EE314project/ipcore_dir/LPfilter.vhd" in Library work.
+Architecture lpfilter_a of Entity lpfilter is up to date.
+Compiling vhdl file "C:/Documents and Settings/EE314project/ipcore_dir/dds.vhd" in Library work.
+Architecture dds_a of Entity dds is up to date.
+Compiling vhdl file "C:/Documents and Settings/EE314project/ipcore_dir/mixer.vhd" in Library work.
+Architecture mixer_a of Entity mixer is up to date.
+Compiling vhdl file "C:/Documents and Settings/EE314project/averageF.vhd" in Library work.
+Entity <averagef> compiled.
+Entity <averagef> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Documents and Settings/EE314project/commodore.vhd" in Library work.
+Architecture behavioral of Entity commodore is up to date.
+Compiling verilog file "ipcore_dir/mixer.v" in library work
+Compiling verilog file "ipcore_dir/LPfilter.v" in library work
+Module <mixer> compiled
+Compiling verilog file "ipcore_dir/dds.v" in library work
+Module <LPfilter> compiled
+Module <dds> compiled
+No errors in compilation
+Analysis of file <"commodore.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <commodore> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <adc> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <DACdriver> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ddsdriver> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <averageF> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <commodore> in library <work> (Architecture <behavioral>).
+WARNING:Xst:2211 - "C:/Documents and Settings/EE314project/commodore.vhd" line 116: Instantiating black box module <LPfilter>.
+WARNING:Xst:2211 - "C:/Documents and Settings/EE314project/commodore.vhd" line 117: Instantiating black box module <dds>.
+WARNING:Xst:2211 - "C:/Documents and Settings/EE314project/commodore.vhd" line 118: Instantiating black box module <mixer>.
+WARNING:Xst:2211 - "C:/Documents and Settings/EE314project/commodore.vhd" line 119: Instantiating black box module <mixer>.
+Entity <commodore> analyzed. Unit <commodore> generated.
+
+Analyzing Entity <adc> in library <work> (Architecture <behavioral>).
+Entity <adc> analyzed. Unit <adc> generated.
+
+Analyzing Entity <DACdriver> in library <work> (Architecture <behavioral>).
+Entity <DACdriver> analyzed. Unit <DACdriver> generated.
+
+Analyzing Entity <ddsdriver> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "C:/Documents and Settings/EE314project/ddsdriver.vhd" line 42: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <datax>
+Entity <ddsdriver> analyzed. Unit <ddsdriver> generated.
+
+Analyzing Entity <averageF> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "C:/Documents and Settings/EE314project/averageF.vhd" line 55: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <tempdata>
+Entity <averageF> analyzed. Unit <averageF> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <adc>.
+    Related source file is "C:/Documents and Settings/EE314project/ACDdriver.vhd".
+    Found 12-bit register for signal <SDATA>.
+    Found 1-bit register for signal <clkx>.
+    Found 6-bit up counter for signal <count>.
+    Found 32-bit up counter for signal <count2>.
+    Found 1-bit register for signal <TCS>.
+    Found 12-bit register for signal <TSDATA>.
+    Summary:
+	inferred   2 Counter(s).
+	inferred  26 D-type flip-flop(s).
+Unit <adc> synthesized.
+
+
+Synthesizing Unit <DACdriver>.
+    Related source file is "C:/Documents and Settings/EE314project/DACdriver.vhd".
+WARNING:Xst:1780 - Signal <TCS> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit register for signal <clkx>.
+    Found 32-bit up counter for signal <count>.
+    Found 32-bit up counter for signal <count2>.
+    Found 1-bit register for signal <temp>.
+    Found 1-bit 8-to-1 multiplexer for signal <temp$mux0000> created at line 65.
+    Summary:
+	inferred   2 Counter(s).
+	inferred   2 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <DACdriver> synthesized.
+
+
+Synthesizing Unit <ddsdriver>.
+    Related source file is "C:/Documents and Settings/EE314project/ddsdriver.vhd".
+    Found 31-bit register for signal <datax>.
+    Found 10x6-bit multiplier for signal <datax$mult0000> created at line 49.
+    Summary:
+	inferred  31 D-type flip-flop(s).
+	inferred   1 Multiplier(s).
+Unit <ddsdriver> synthesized.
+
+
+Synthesizing Unit <averageF>.
+    Related source file is "C:/Documents and Settings/EE314project/averageF.vhd".
+WARNING:Xst:646 - Signal <tempdata<7:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit register for signal <clkx>.
+    Found 32-bit up counter for signal <count2>.
+    Found 8-bit register for signal <dataOutS>.
+    Found 11-bit register for signal <sum>.
+    Found 11-bit adder for signal <sum$add0000> created at line 64.
+    Found 11-bit adder for signal <sum$addsub0000> created at line 64.
+    Found 11-bit adder for signal <sum$addsub0001> created at line 64.
+    Found 11-bit adder for signal <sum$addsub0002> created at line 64.
+    Found 11-bit adder for signal <sum$addsub0003> created at line 64.
+    Found 11-bit adder for signal <sum$addsub0004> created at line 64.
+    Found 11-bit adder for signal <sum$addsub0005> created at line 64.
+    Found 11-bit adder for signal <sum$addsub0006> created at line 64.
+    Found 64-bit register for signal <tempdata>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  84 D-type flip-flop(s).
+	inferred   8 Adder/Subtractor(s).
+Unit <averageF> synthesized.
+
+
+Synthesizing Unit <commodore>.
+    Related source file is "C:/Documents and Settings/EE314project/commodore.vhd".
+WARNING:Xst:646 - Signal <rfd> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <rdy> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <clock> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:646 - Signal <SAvgOut> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <CAvgOut> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <commodore> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 1
+ 10x6-bit multiplier                                   : 1
+# Adders/Subtractors                                   : 16
+ 11-bit adder                                          : 16
+# Counters                                             : 6
+ 32-bit up counter                                     : 5
+ 6-bit up counter                                      : 1
+# Registers                                            : 26
+ 1-bit register                                        : 18
+ 11-bit register                                       : 2
+ 12-bit register                                       : 1
+ 31-bit register                                       : 1
+ 64-bit register                                       : 2
+ 8-bit register                                        : 2
+# Multiplexers                                         : 1
+ 1-bit 8-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1290 - Hierarchical block <avgS> is unconnected in block <commodore>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <avgC> is unconnected in block <commodore>.
+   It will be removed from the design.
+INFO:Xst:2261 - The FF/Latch <datax_16> in Unit <ddsd> is equivalent to the following 14 FFs/Latches, which will be removed : <datax_17> <datax_18> <datax_19> <datax_20> <datax_21> <datax_22> <datax_23> <datax_24> <datax_25> <datax_26> <datax_27> <datax_28> <datax_29> <datax_30> 
+WARNING:Xst:1293 - FF/Latch <clkx> has a constant value of 0 in block <dac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <datax_16> (without init value) has a constant value of 0 in block <ddsd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <temp> has a constant value of 0 in block <dac>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2404 -  FFs/Latches <datax<30:16>> (without init value) have a constant value of 0 in block <ddsdriver>.
+
+Synthesizing (advanced) Unit <ddsdriver>.
+	Found pipelined multiplier on signal <datax_mult0000>:
+		- 1 pipeline level(s) found in a register connected to the multiplier macro output.
+		Pushing register(s) into the multiplier macro.
+Unit <ddsdriver> synthesized (advanced).
+WARNING:Xst:2677 - Node <tempdata_0> of sequential type is unconnected in block <averageF>.
+WARNING:Xst:2677 - Node <tempdata_1> of sequential type is unconnected in block <averageF>.
+WARNING:Xst:2677 - Node <tempdata_2> of sequential type is unconnected in block <averageF>.
+WARNING:Xst:2677 - Node <tempdata_3> of sequential type is unconnected in block <averageF>.
+WARNING:Xst:2677 - Node <tempdata_4> of sequential type is unconnected in block <averageF>.
+WARNING:Xst:2677 - Node <tempdata_5> of sequential type is unconnected in block <averageF>.
+WARNING:Xst:2677 - Node <tempdata_6> of sequential type is unconnected in block <averageF>.
+WARNING:Xst:2677 - Node <tempdata_7> of sequential type is unconnected in block <averageF>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 1
+ 10x6-bit registered multiplier                        : 1
+# Adders/Subtractors                                   : 16
+ 11-bit adder                                          : 16
+# Counters                                             : 6
+ 32-bit up counter                                     : 5
+ 6-bit up counter                                      : 1
+# Registers                                            : 180
+ Flip-Flops                                            : 180
+# Multiplexers                                         : 1
+ 1-bit 8-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <tempdata_36> has a constant value of 0 in block <averageF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <tempdata_37> has a constant value of 0 in block <averageF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <tempdata_38> has a constant value of 0 in block <averageF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <tempdata_39> has a constant value of 0 in block <averageF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <tempdata_40> has a constant value of 0 in block <averageF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <tempdata_41> has a constant value of 0 in block <averageF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <tempdata_42> has a constant value of 0 in block <averageF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <tempdata_43> has a constant value of 0 in block <averageF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <tempdata_44> has a constant value of 0 in block <averageF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <tempdata_45> has a constant value of 0 in block <averageF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <tempdata_46> has a constant value of 0 in block <averageF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <tempdata_47> has a constant value of 0 in block <averageF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <tempdata_48> has a constant value of 0 in block <averageF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <tempdata_49> has a constant value of 0 in block <averageF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <tempdata_50> has a constant value of 0 in block <averageF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <tempdata_51> has a constant value of 0 in block <averageF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <tempdata_52> has a constant value of 0 in block <averageF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <tempdata_53> has a constant value of 0 in block <averageF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <tempdata_54> has a constant value of 0 in block <averageF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <tempdata_55> has a constant value of 0 in block <averageF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <tempdata_56> has a constant value of 0 in block <averageF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <tempdata_57> has a constant value of 0 in block <averageF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <tempdata_58> has a constant value of 0 in block <averageF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <tempdata_59> has a constant value of 0 in block <averageF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <tempdata_60> has a constant value of 0 in block <averageF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <tempdata_61> has a constant value of 0 in block <averageF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <tempdata_62> has a constant value of 0 in block <averageF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <tempdata_63> has a constant value of 0 in block <averageF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <tempdata_8> has a constant value of 0 in block <averageF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <tempdata_9> has a constant value of 0 in block <averageF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <tempdata_10> has a constant value of 0 in block <averageF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <tempdata_11> has a constant value of 0 in block <averageF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <tempdata_12> has a constant value of 0 in block <averageF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <tempdata_13> has a constant value of 0 in block <averageF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <tempdata_14> has a constant value of 0 in block <averageF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <tempdata_15> has a constant value of 0 in block <averageF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <tempdata_16> has a constant value of 0 in block <averageF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <tempdata_17> has a constant value of 0 in block <averageF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <tempdata_18> has a constant value of 0 in block <averageF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <tempdata_19> has a constant value of 0 in block <averageF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <tempdata_20> has a constant value of 0 in block <averageF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <tempdata_21> has a constant value of 0 in block <averageF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <tempdata_22> has a constant value of 0 in block <averageF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <tempdata_23> has a constant value of 0 in block <averageF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <tempdata_24> has a constant value of 0 in block <averageF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <tempdata_25> has a constant value of 0 in block <averageF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <tempdata_26> has a constant value of 0 in block <averageF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <tempdata_27> has a constant value of 0 in block <averageF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <tempdata_28> has a constant value of 0 in block <averageF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <tempdata_29> has a constant value of 0 in block <averageF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <tempdata_30> has a constant value of 0 in block <averageF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <tempdata_31> has a constant value of 0 in block <averageF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <tempdata_32> has a constant value of 0 in block <averageF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <tempdata_33> has a constant value of 0 in block <averageF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <tempdata_34> has a constant value of 0 in block <averageF>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <tempdata_35> has a constant value of 0 in block <averageF>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <sum_3> in Unit <averageF> is equivalent to the following FF/Latch, which will be removed : <dataOutS_0> 
+INFO:Xst:2261 - The FF/Latch <sum_4> in Unit <averageF> is equivalent to the following FF/Latch, which will be removed : <dataOutS_1> 
+INFO:Xst:2261 - The FF/Latch <sum_5> in Unit <averageF> is equivalent to the following FF/Latch, which will be removed : <dataOutS_2> 
+INFO:Xst:2261 - The FF/Latch <sum_6> in Unit <averageF> is equivalent to the following FF/Latch, which will be removed : <dataOutS_3> 
+INFO:Xst:2261 - The FF/Latch <sum_7> in Unit <averageF> is equivalent to the following FF/Latch, which will be removed : <dataOutS_4> 
+INFO:Xst:2261 - The FF/Latch <sum_8> in Unit <averageF> is equivalent to the following FF/Latch, which will be removed : <dataOutS_5> 
+INFO:Xst:2261 - The FF/Latch <sum_9> in Unit <averageF> is equivalent to the following FF/Latch, which will be removed : <dataOutS_6> 
+INFO:Xst:2261 - The FF/Latch <sum_10> in Unit <averageF> is equivalent to the following FF/Latch, which will be removed : <dataOutS_7> 
+WARNING:Xst:1293 - FF/Latch <clkx> has a constant value of 0 in block <DACdriver>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <temp> has a constant value of 0 in block <DACdriver>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <commodore> ...
+
+Optimizing unit <adc> ...
+
+Optimizing unit <averageF> ...
+WARNING:Xst:2677 - Node <avgC/count2_31> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgC/count2_30> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgC/count2_29> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgC/count2_28> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgC/count2_27> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgC/count2_26> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgC/count2_25> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgC/count2_24> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgC/count2_23> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgC/count2_22> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgC/count2_21> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgC/count2_20> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgC/count2_19> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgC/count2_18> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgC/count2_17> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgC/count2_16> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgC/count2_15> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgC/count2_14> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgC/count2_13> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgC/count2_12> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgC/count2_11> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgC/count2_10> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgC/count2_9> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgC/count2_8> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgC/count2_7> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgC/count2_6> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgC/count2_5> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgC/count2_4> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgC/count2_3> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgC/count2_2> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgC/count2_1> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgC/count2_0> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgC/sum_10> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgC/sum_9> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgC/sum_8> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgC/sum_7> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgC/sum_6> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgC/sum_5> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgC/sum_4> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgC/sum_3> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgC/sum_2> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgC/sum_1> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgC/sum_0> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgC/clkx> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgS/count2_31> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgS/count2_30> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgS/count2_29> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgS/count2_28> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgS/count2_27> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgS/count2_26> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgS/count2_25> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgS/count2_24> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgS/count2_23> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgS/count2_22> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgS/count2_21> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgS/count2_20> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgS/count2_19> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgS/count2_18> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgS/count2_17> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgS/count2_16> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgS/count2_15> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgS/count2_14> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgS/count2_13> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgS/count2_12> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgS/count2_11> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgS/count2_10> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgS/count2_9> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgS/count2_8> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgS/count2_7> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgS/count2_6> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgS/count2_5> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgS/count2_4> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgS/count2_3> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgS/count2_2> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgS/count2_1> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgS/count2_0> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgS/sum_10> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgS/sum_9> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgS/sum_8> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgS/sum_7> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgS/sum_6> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgS/sum_5> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgS/sum_4> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgS/sum_3> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgS/sum_2> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgS/sum_1> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgS/sum_0> of sequential type is unconnected in block <commodore>.
+WARNING:Xst:2677 - Node <avgS/clkx> of sequential type is unconnected in block <commodore>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block commodore, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 64
+ Flip-Flops                                            : 64
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                             *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : commodore.ngr
+Top Level Output File Name         : commodore
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 14
+
+Cell Usage :
+# BELS                             : 137
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 31
+#      LUT2                        : 1
+#      LUT3                        : 6
+#      LUT3_D                      : 3
+#      LUT4                        : 20
+#      LUT4_D                      : 1
+#      MUXCY                       : 39
+#      VCC                         : 1
+#      XORCY                       : 32
+# FlipFlops/Latches                : 64
+#      FD                          : 5
+#      FDE                         : 25
+#      FDR                         : 33
+#      FDRE                        : 1
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 13
+#      IBUF                        : 11
+#      OBUF                        : 2
+# MULTs                            : 1
+#      MULT18X18SIO                : 1
+# Others                           : 4
+#      dds                         : 1
+#      LPfilter                    : 1
+#      mixer                       : 2
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s1200efg320-4 
+
+ Number of Slices:                       45  out of   8672     0%  
+ Number of Slice Flip Flops:             64  out of  17344     0%  
+ Number of 4 input LUTs:                 64  out of  17344     0%  
+ Number of IOs:                          14
+ Number of bonded IOBs:                  14  out of    250     5%  
+ Number of MULT18X18SIOs:                 1  out of     28     3%  
+ Number of GCLKs:                         2  out of     24     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+adcc/clkx1                         | BUFG                   | 32    |
+mclk                               | BUFGP                  | 33    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 5.240ns (Maximum Frequency: 190.857MHz)
+   Minimum input arrival time before clock: 5.618ns
+   Maximum output required time after clock: 4.283ns
+   Maximum combinational path delay: 2.720ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'mclk'
+  Clock period: 5.240ns (frequency: 190.857MHz)
+  Total number of paths / destination ports: 1585 / 66
+-------------------------------------------------------------------------
+Delay:               5.240ns (Levels of Logic = 9)
+  Source:            adcc/count2_8 (FF)
+  Destination:       adcc/count2_31 (FF)
+  Source Clock:      mclk rising
+  Destination Clock: mclk rising
+
+  Data Path: adcc/count2_8 to adcc/count2_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.591   0.622  adcc/count2_8 (adcc/count2_8)
+     LUT4:I0->O            1   0.704   0.000  adcc/clkx_cmp_eq0000_wg_lut<0> (adcc/clkx_cmp_eq0000_wg_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  adcc/clkx_cmp_eq0000_wg_cy<0> (adcc/clkx_cmp_eq0000_wg_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  adcc/clkx_cmp_eq0000_wg_cy<1> (adcc/clkx_cmp_eq0000_wg_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  adcc/clkx_cmp_eq0000_wg_cy<2> (adcc/clkx_cmp_eq0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  adcc/clkx_cmp_eq0000_wg_cy<3> (adcc/clkx_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  adcc/clkx_cmp_eq0000_wg_cy<4> (adcc/clkx_cmp_eq0000_wg_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  adcc/clkx_cmp_eq0000_wg_cy<5> (adcc/clkx_cmp_eq0000_wg_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  adcc/clkx_cmp_eq0000_wg_cy<6> (adcc/clkx_cmp_eq0000_wg_cy<6>)
+     MUXCY:CI->O          33   0.331   1.263  adcc/clkx_cmp_eq0000_wg_cy<7> (adcc/clkx_cmp_eq0000)
+     FDR:R                     0.911          adcc/count2_0
+    ----------------------------------------
+    Total                      5.240ns (3.355ns logic, 1.885ns route)
+                                       (64.0% logic, 36.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'adcc/clkx1'
+  Clock period: 4.917ns (frequency: 203.376MHz)
+  Total number of paths / destination ports: 189 / 44
+-------------------------------------------------------------------------
+Delay:               4.917ns (Levels of Logic = 2)
+  Source:            adcc/count_3 (FF)
+  Destination:       adcc/TCS (FF)
+  Source Clock:      adcc/clkx1 rising
+  Destination Clock: adcc/clkx1 rising
+
+  Data Path: adcc/count_3 to adcc/TCS
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              12   0.591   1.136  adcc/count_3 (adcc/count_3)
+     LUT3_D:I0->O          2   0.704   0.451  adcc/TCS_and000011 (adcc/N4)
+     LUT4:I3->O            1   0.704   0.420  adcc/TCS_cmp_eq00001 (adcc/TCS_not0002_inv)
+     FDRE:R                    0.911          adcc/TCS
+    ----------------------------------------
+    Total                      4.917ns (2.910ns logic, 2.007ns route)
+                                       (59.2% logic, 40.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'adcc/clkx1'
+  Total number of paths / destination ports: 22 / 22
+-------------------------------------------------------------------------
+Offset:              5.618ns (Levels of Logic = 1)
+  Source:            frequency<9> (PAD)
+  Destination:       ddsd/Mmult_datax_mult0000 (MULT)
+  Destination Clock: adcc/clkx1 rising
+
+  Data Path: frequency<9> to ddsd/Mmult_datax_mult0000
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.218   0.420  frequency_9_IBUF (frequency_9_IBUF)
+     MULT18X18SIO:A9           3.980          ddsd/Mmult_datax_mult0000
+    ----------------------------------------
+    Total                      5.618ns (5.198ns logic, 0.420ns route)
+                                       (92.5% logic, 7.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'adcc/clkx1'
+  Total number of paths / destination ports: 29 / 29
+-------------------------------------------------------------------------
+Offset:              4.283ns (Levels of Logic = 1)
+  Source:            adcc/TCS (FF)
+  Destination:       CS (PAD)
+  Source Clock:      adcc/clkx1 rising
+
+  Data Path: adcc/TCS to CS
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             1   0.591   0.420  adcc/TCS (adcc/TCS)
+     OBUF:I->O                 3.272          CS_OBUF (CS)
+    ----------------------------------------
+    Total                      4.283ns (3.863ns logic, 0.420ns route)
+                                       (90.2% logic, 9.8% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 44 / 44
+-------------------------------------------------------------------------
+Delay:               2.720ns (Levels of Logic = 1)
+  Source:            mclk (PAD)
+  Destination:       LPf:clk (PAD)
+
+  Data Path: mclk to LPf:clk
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     BUFGP:I->O           33   1.457   1.263  mclk_BUFGP (mclk_BUFGP)
+    LPfilter:clk               0.000          LPf
+    ----------------------------------------
+    Total                      2.720ns (1.457ns logic, 1.263ns route)
+                                       (53.6% logic, 46.4% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 10.55 secs
+ 
+--> 
+
+Total memory usage is 137420 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  173 (   0 filtered)
+Number of infos    :    9 (   0 filtered)
+

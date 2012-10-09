@@ -1,0 +1,20 @@
+# Output products list for <LPfilter>
+LPfilter.asy
+LPfilter.gise
+LPfilter.ise
+LPfilter.mif
+LPfilter.ngc
+LPfilter.sym
+LPfilter.v
+LPfilter.veo
+LPfilter.vhd
+LPfilter.vho
+LPfilter.xco
+LPfilter.xise
+LPfilterCOEFF_auto0_0.mif
+LPfilterCOEFF_auto0_1.mif
+LPfilter_fir_compiler_v4_0_xst_1_vhdl.prj
+LPfilter_flist.txt
+LPfilter_xmdf.tcl
+LPfilterfilt_decode_rom.mif
+core_resources.txt

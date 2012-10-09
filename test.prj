@@ -1,0 +1,6 @@
+verilog work "ipcore_dir/mixer.v"
+verilog work "ipcore_dir/LPfilter.v"
+verilog work "ipcore_dir/dds.v"
+vhdl work "ddsdriver.vhd"
+vhdl work "ACDdriver.vhd"
+vhdl work "test.vhd"

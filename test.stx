@@ -1,0 +1,47 @@
+Release 11.1 - xst L.33 (nt)
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Documents and Settings/EE314project/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to C:/Documents and Settings/EE314project/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> 
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "ipcore_dir/mixer.v" in library work
+Compiling verilog file "ipcore_dir/LPfilter.v" in library work
+Module <mixer> compiled
+Compiling verilog file "ipcore_dir/dds.v" in library work
+Module <LPfilter> compiled
+Module <dds> compiled
+No errors in compilation
+Analysis of file <"test.prj"> succeeded.
+ 
+Compiling vhdl file "C:/Documents and Settings/EE314project/ACDdriver.vhd" in Library work.
+Architecture behavioral of Entity adc is up to date.
+Compiling vhdl file "C:/Documents and Settings/EE314project/ddsdriver.vhd" in Library work.
+Architecture behavioral of Entity ddsdriver is up to date.
+Compiling vhdl file "C:/Documents and Settings/EE314project/test.vhd" in Library work.
+Entity <test> compiled.
+Entity <test> (Architecture <Behavioral>) compiled.
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.34 secs
+ 
+--> 
+
+Total memory usage is 120620 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

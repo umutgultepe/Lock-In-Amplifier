@@ -1,0 +1,23 @@
+xst -ise "C:/Documents and Settings/EE314project/EE314project.ise" -intstyle ise -ifn "C:/Documents and Settings/EE314project/commodore.xst" -ofn "C:/Documents and Settings/EE314project/commodore.syr" 
+xst -ise "C:/Documents and Settings/EE314project/EE314project.ise" -intstyle ise -ifn "C:/Documents and Settings/EE314project/commodore.xst" -ofn "C:/Documents and Settings/EE314project/commodore.syr" 
+xst -ise "C:/Documents and Settings/EE314project/EE314project.ise" -intstyle ise -ifn "C:/Documents and Settings/EE314project/commodore.xst" -ofn "C:/Documents and Settings/EE314project/commodore.syr" 
+xst -ise "C:/Documents and Settings/EE314project/EE314project.ise" -intstyle ise -ifn "C:/Documents and Settings/EE314project/commodore.xst" -ofn "C:/Documents and Settings/EE314project/commodore.syr" 
+xst -ise "C:/Documents and Settings/EE314project/EE314project.ise" -intstyle ise -ifn "C:/Documents and Settings/EE314project/commodore.xst" -ofn "C:/Documents and Settings/EE314project/commodore.syr" 
+xst -ise "C:/Documents and Settings/EE314project/EE314project.ise" -intstyle ise -ifn "C:/Documents and Settings/EE314project/commodore.xst" -ofn "C:/Documents and Settings/EE314project/commodore.syr" 
+xst -ise "C:/Documents and Settings/EE314project/EE314project.ise" -intstyle ise -ifn "C:/Documents and Settings/EE314project/commodore.xst" -ofn "C:/Documents and Settings/EE314project/commodore.syr" 
+xst -ise "C:/Documents and Settings/EE314project/EE314project.ise" -intstyle ise -ifn "C:/Documents and Settings/EE314project/commodore.xst" -ofn "C:/Documents and Settings/EE314project/commodore.syr" 
+xst -ise "C:/Documents and Settings/EE314project/EE314project.ise" -intstyle ise -ifn "C:/Documents and Settings/EE314project/commodore.xst" -ofn "C:/Documents and Settings/EE314project/commodore.syr" 
+xst -ise "C:/Documents and Settings/EE314project/EE314project.ise" -intstyle ise -ifn "C:/Documents and Settings/EE314project/commodore.xst" -ofn "C:/Documents and Settings/EE314project/commodore.syr" 
+xst -ise "C:/Documents and Settings/EE314project/EE314project.ise" -intstyle ise -ifn "C:/Documents and Settings/EE314project/commodore.xst" -ofn "C:/Documents and Settings/EE314project/commodore.syr" 
+xst -ise "C:/Documents and Settings/EE314project/EE314project.ise" -intstyle ise -ifn "C:/Documents and Settings/EE314project/commodore.xst" -ofn "C:/Documents and Settings/EE314project/commodore.syr" 
+xst -ise "C:/Documents and Settings/EE314project/EE314project.ise" -intstyle ise -ifn "C:/Documents and Settings/EE314project/commodore.xst" -ofn "C:/Documents and Settings/EE314project/commodore.syr" 
+xst -ise "C:/Documents and Settings/EE314project/EE314project.ise" -intstyle ise -ifn "C:/Documents and Settings/EE314project/commodore.xst" -ofn "C:/Documents and Settings/EE314project/commodore.syr" 
+xst -ise "C:/Documents and Settings/EE314project/EE314project.ise" -intstyle ise -ifn "C:/Documents and Settings/EE314project/commodore.xst" -ofn "C:/Documents and Settings/EE314project/commodore.syr" 
+xst -ise "C:/Documents and Settings/EE314project/EE314project.ise" -intstyle ise -ifn "C:/Documents and Settings/EE314project/commodore.xst" -ofn "C:/Documents and Settings/EE314project/commodore.syr" 
+xst -ise "C:/Documents and Settings/EE314project/EE314project.ise" -intstyle ise -ifn "C:/Documents and Settings/EE314project/commodore.xst" -ofn "C:/Documents and Settings/EE314project/commodore.syr" 
+xst -ise "C:/Documents and Settings/EE314project/EE314project.ise" -intstyle ise -ifn "C:/Documents and Settings/EE314project/commodore.xst" -ofn "C:/Documents and Settings/EE314project/commodore.syr" 
+xst -ise "C:/Documents and Settings/EE314project/EE314project.ise" -intstyle ise -ifn "C:/Documents and Settings/EE314project/commodore.xst" -ofn "C:/Documents and Settings/EE314project/commodore.syr" 
+ngdbuild -ise "EE314project.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s1200e-fg320-4 commodore.ngc commodore.ngd  
+map -ise "EE314project.ise" -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o commodore_map.ncd commodore.ngd commodore.pcf 
+par -ise "EE314project.ise" -w -intstyle ise -ol std -t 1 commodore_map.ncd commodore.ncd commodore.pcf 
+trce -ise "C:/Documents and Settings/EE314project/EE314project.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml commodore.twx commodore.ncd -o commodore.twr commodore.pcf 

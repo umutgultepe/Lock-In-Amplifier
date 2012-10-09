@@ -1,0 +1,14 @@
+# Output products list for <ram_w>
+ram_w.asy
+ram_w.gise
+ram_w.ise
+ram_w.ngc
+ram_w.sym
+ram_w.v
+ram_w.veo
+ram_w.vhd
+ram_w.vho
+ram_w.xco
+ram_w.xise
+ram_w_flist.txt
+ram_w_xmdf.tcl

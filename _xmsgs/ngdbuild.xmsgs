@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="NgdBuild" num="443" delta="unknown" >SFF primitive &apos;<arg fmt="%s" index="1">LPf/blk00000003/blk00000074</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="unknown" >SFF primitive &apos;<arg fmt="%s" index="1">LPf/blk00000003/blk000000e8</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="443" delta="unknown" >SFF primitive &apos;<arg fmt="%s" index="1">LPf/blk00000003/blk0000016a</arg>&apos; has unconnected output pin
+</msg>
+
+<msg type="warning" file="NgdBuild" num="452" delta="unknown" ><arg fmt="%s" index="1">logical</arg> net &apos;<arg fmt="%s" index="2">ddsx/BU2/U0/acc_phase&lt;31&gt;</arg>&apos; has no driver
+</msg>
+
+</messages>
+

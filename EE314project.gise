@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ACDdriver.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="ACDdriver.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="ACDdriver.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="DACdriver.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="DACdriver.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="DACdriver.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="DACdriver_stx.prj"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="EE314project.ntrc_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BCD" xil_pn:name="EE314project_xdb/cst.xbcd"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="adc.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="adc.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="adc.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="adc.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="adc.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="adc.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="adc.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="adc.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="adc.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="adc.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="adc.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="adc.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="adc.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="adc.syr"/>
+    <file xil_pn:fileType="FILE_VERILOG_INSTTEMPLATE" xil_pn:name="adc.tfi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="adc.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="adc.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="adc.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="adc.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="adc.xst"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="adc_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="adc_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="adc_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="adc_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="adc_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="adc_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="adc_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="adc_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="adc_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="adc_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="adc_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="adc_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="adc_usage.xml"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="adc_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="adc_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="averageF.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="averageF.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="averageF.xst"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="commodore.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="commodore.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="commodore.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="commodore.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="commodore.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="commodore.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="commodore.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="commodore.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="commodore.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="commodore.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="commodore.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="commodore.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="commodore.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="commodore.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="commodore.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="commodore.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="commodore.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="commodore.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="commodore.xst"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="commodore_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="commodore_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="commodore_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="commodore_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="commodore_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="commodore_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="commodore_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="commodore_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="commodore_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="commodore_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="commodore_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="commodore_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="commodore_usage.xml"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="commodore_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="commodore_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ddsdriver.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="ddsdriver.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="ddsdriver.xst"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_USERDOC" xil_pn:name="ipcore_dir/DDS_readme.txt"/>
+    <file xil_pn:fileType="FILE_USERDOC" xil_pn:name="ipcore_dir/LPfilter_readme.txt"/>
+    <file xil_pn:fileType="FILE_USERDOC" xil_pn:name="ipcore_dir/mixer_readme.txt"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="mixer.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="mixer.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="mixer.xst"/>
+    <file xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="smartpreview.twr"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="test.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="test.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="test.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="testAvg_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="testAvg_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="testAvg_stx.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="testDAC_stx.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1269849268" xil_pn:name="TRANEXT_compLibraries_FPGA" xil_pn:prop_ck="8372242179576815340" xil_pn:start_ts="1269849261">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1271021822" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1271021822">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1271261224" xil_pn:in_ck="-7880651763656862832" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1271261223">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="ACDdriver.vhd"/>
+      <outfile xil_pn:name="DACdriver.vhd"/>
+      <outfile xil_pn:name="averageF.vhd"/>
+      <outfile xil_pn:name="commodore.vhd"/>
+      <outfile xil_pn:name="ddsdriver.vhd"/>
+      <outfile xil_pn:name="testAvg.vhd"/>
+      <outfile xil_pn:name="testDAC.vhd"/>
+      <outfile xil_pn:name="testben.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1271179069" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="5917217509834150101" xil_pn:start_ts="1271179069">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1271179069" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="8478310710141242455" xil_pn:start_ts="1271179069">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1271259897" xil_pn:in_ck="-7400181530928703145" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-3108548746484276863" xil_pn:start_ts="1271259895">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <outfile xil_pn:name="ipcore_dir/LPfilter.ngc"/>
+      <outfile xil_pn:name="ipcore_dir/LPfilter.vhd"/>
+      <outfile xil_pn:name="ipcore_dir/dds.ngc"/>
+      <outfile xil_pn:name="ipcore_dir/dds.vhd"/>
+      <outfile xil_pn:name="ipcore_dir/mixer.ngc"/>
+      <outfile xil_pn:name="ipcore_dir/mixer.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1271261224" xil_pn:in_ck="7313851073440166191" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1271261224">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="ACDdriver.vhd"/>
+      <outfile xil_pn:name="DACdriver.vhd"/>
+      <outfile xil_pn:name="averageF.vhd"/>
+      <outfile xil_pn:name="commodore.vhd"/>
+      <outfile xil_pn:name="ddsdriver.vhd"/>
+      <outfile xil_pn:name="ipcore_dir/LPfilter.vhd"/>
+      <outfile xil_pn:name="ipcore_dir/dds.vhd"/>
+      <outfile xil_pn:name="ipcore_dir/mixer.vhd"/>
+      <outfile xil_pn:name="testAvg.vhd"/>
+      <outfile xil_pn:name="testDAC.vhd"/>
+      <outfile xil_pn:name="testben.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1271261853" xil_pn:in_ck="7775494873737653962" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="4728190052434121571" xil_pn:start_ts="1271261849">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="testAvg_beh.prj"/>
+      <outfile xil_pn:name="testAvg_isim_beh.exe"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1271261854" xil_pn:in_ck="-6512276809626839603" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-1391075516063872020" xil_pn:start_ts="1271261853">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+    </transform>
+    <transform xil_pn:end_ts="1267430838" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1267430838">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1267430838" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="8478310710141242455" xil_pn:start_ts="1267430838">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1271257388" xil_pn:in_ck="-7400181530928703145" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-3108548746484276863" xil_pn:start_ts="1271257387">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <outfile xil_pn:name="ipcore_dir/LPfilter.ngc"/>
+      <outfile xil_pn:name="ipcore_dir/LPfilter.vhd"/>
+      <outfile xil_pn:name="ipcore_dir/dds.ngc"/>
+      <outfile xil_pn:name="ipcore_dir/dds.vhd"/>
+      <outfile xil_pn:name="ipcore_dir/mixer.ngc"/>
+      <outfile xil_pn:name="ipcore_dir/mixer.vhd"/>
+    </transform>
+    <transform xil_pn:name="TRAN_SubProjectAbstractToPreProxy">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1267430839" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="5917217509834150101" xil_pn:start_ts="1267430839">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1271188808" xil_pn:in_ck="330046188921903804" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:start_ts="1271188808">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+    </transform>
+    <transform xil_pn:end_ts="1268644008" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-875712972865869678" xil_pn:start_ts="1268644008">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+    </transform>
+    <transform xil_pn:end_ts="1271259619" xil_pn:in_ck="1643337094313651039" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-5984653244533195633" xil_pn:start_ts="1271259599">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="EE314project.ntrc_log"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="commodore.cmd_log"/>
+      <outfile xil_pn:name="commodore.lso"/>
+      <outfile xil_pn:name="commodore.ngc"/>
+      <outfile xil_pn:name="commodore.ngr"/>
+      <outfile xil_pn:name="commodore.prj"/>
+      <outfile xil_pn:name="commodore.stx"/>
+      <outfile xil_pn:name="commodore.syr"/>
+      <outfile xil_pn:name="commodore.xst"/>
+      <outfile xil_pn:name="commodore_summary.html"/>
+      <outfile xil_pn:name="commodore_vhdl.prj"/>
+      <outfile xil_pn:name="commodore_xst.xrpt"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1271259620" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-9139031806939903075" xil_pn:start_ts="1271259619">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="EE314project_xdb/cst.xbcd"/>
+    </transform>
+    <transform xil_pn:end_ts="1271259636" xil_pn:in_ck="105325522904374586" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="7928816772965205667" xil_pn:start_ts="1271259620">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="commodore.bld"/>
+      <outfile xil_pn:name="commodore.cmd_log"/>
+      <outfile xil_pn:name="commodore.ngd"/>
+      <outfile xil_pn:name="commodore_ngdbuild.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1271259654" xil_pn:in_ck="3613001031322878875" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="3188416950630775481" xil_pn:start_ts="1271259636">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <outfile xil_pn:name="commodore.pcf"/>
+      <outfile xil_pn:name="commodore_map.map"/>
+      <outfile xil_pn:name="commodore_map.mrp"/>
+      <outfile xil_pn:name="commodore_map.ncd"/>
+      <outfile xil_pn:name="commodore_map.ngm"/>
+      <outfile xil_pn:name="commodore_map.xrpt"/>
+      <outfile xil_pn:name="commodore_summary.xml"/>
+      <outfile xil_pn:name="commodore_usage.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1271259686" xil_pn:in_ck="5789142529346878445" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-8273006849230142272" xil_pn:start_ts="1271259654">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+      <outfile xil_pn:name="commodore.ncd"/>
+      <outfile xil_pn:name="commodore.pad"/>
+      <outfile xil_pn:name="commodore.par"/>
+      <outfile xil_pn:name="commodore.ptwx"/>
+      <outfile xil_pn:name="commodore.unroutes"/>
+      <outfile xil_pn:name="commodore.xpi"/>
+      <outfile xil_pn:name="commodore_pad.csv"/>
+      <outfile xil_pn:name="commodore_pad.txt"/>
+      <outfile xil_pn:name="commodore_par.xrpt"/>
+      <outfile xil_pn:name="smartpreview.twr"/>
+    </transform>
+    <transform xil_pn:end_ts="1271259686" xil_pn:in_ck="6303438937683725331" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="9067365325683159964" xil_pn:start_ts="1271259679">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+      <outfile xil_pn:name="commodore.twr"/>
+      <outfile xil_pn:name="commodore.twx"/>
+    </transform>
+  </transforms>
+
+</generated_project>

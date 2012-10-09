@@ -1,0 +1,14 @@
+# Output products list for <mixer>
+mixer.asy
+mixer.gise
+mixer.ise
+mixer.ngc
+mixer.sym
+mixer.v
+mixer.veo
+mixer.vhd
+mixer.vho
+mixer.xco
+mixer.xise
+mixer_flist.txt
+mixer_xmdf.tcl

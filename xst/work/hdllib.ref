@@ -1,0 +1,23 @@
+EN dacdriver NULL "C:/Documents and Settings/EE314project/DACdriver.vhd" sub00/vhpl04 1271259614
+AR mixer mixer_a "C:/Documents and Settings/EE314project/ipcore_dir/mixer.vhd" sub00/vhpl12 1271259623
+MO ram_f NULL ipcore_dir/ram_f.v vlg15/ram__f.bin 1269845949
+MO dds NULL ipcore_dir/dds.v vlg2B/dds.bin 1271259612
+AR commodore behavioral "C:/Documents and Settings/EE314project/commodore.vhd" sub00/vhpl17 1271259627
+AR averagef behavioral "C:/Documents and Settings/EE314project/averageF.vhd" sub00/vhpl23 1271259625
+MO ram_w NULL ipcore_dir/ram_w.v vlg26/ram__w.bin 1269845949
+AR dds dds_a "C:/Documents and Settings/EE314project/ipcore_dir/dds.vhd" sub00/vhpl09 1271259621
+AR ram_w ram_w_a "C:/Documents and Settings/EE314project/ipcore_dir/ram_w.vhd" sub00/vhpl16 1269845964
+AR test behavioral "C:/Documents and Settings/EE314project/test.vhd" sub00/vhpl21 1269846709
+AR dacdriver behavioral "C:/Documents and Settings/EE314project/DACdriver.vhd" sub00/vhpl05 1271259615
+EN adc NULL "C:/Documents and Settings/EE314project/ACDdriver.vhd" sub00/vhpl00 1271259612
+AR ram_f ram_f_a "C:/Documents and Settings/EE314project/ipcore_dir/ram_f.vhd" sub00/vhpl14 1269845962
+MO LPfilter NULL ipcore_dir/LPfilter.v vlg1E/_l_pfilter.bin 1271259612
+AR adc behavioral "C:/Documents and Settings/EE314project/ACDdriver.vhd" sub00/vhpl01 1271259613
+EN ddsdriver NULL "C:/Documents and Settings/EE314project/ddsdriver.vhd" sub00/vhpl02 1271259616
+EN lpfilter NULL "C:/Documents and Settings/EE314project/ipcore_dir/LPfilter.vhd" sub00/vhpl06 1271259618
+MO mixer NULL ipcore_dir/mixer.v vlg05/mixer.bin 1271259612
+AR lpfilter lpfilter_a "C:/Documents and Settings/EE314project/ipcore_dir/LPfilter.vhd" sub00/vhpl07 1271259619
+EN test NULL "C:/Documents and Settings/EE314project/test.vhd" sub00/vhpl20 1269846708
+EN averagef NULL "C:/Documents and Settings/EE314project/averageF.vhd" sub00/vhpl22 1271259624
+EN commodore NULL "C:/Documents and Settings/EE314project/commodore.vhd" sub00/vhpl10 1271259626
+AR ddsdriver behavioral "C:/Documents and Settings/EE314project/ddsdriver.vhd" sub00/vhpl03 1271259617

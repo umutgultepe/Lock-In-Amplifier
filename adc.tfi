@@ -1,0 +1,13 @@
+
+
+
+// Instantiate the module
+adc instance_name (
+    .MCLK(MCLK), 
+    .SCLK(SCLK), 
+    .SDATA(SDATA), 
+    .CS(CS), 
+    .Vin(Vin)
+    );
+
+
